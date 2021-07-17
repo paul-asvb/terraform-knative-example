@@ -12,8 +12,8 @@ module "eks" {
 
   worker_groups = [
     {
-      name                 = "example-cluster-worker"
-      instance_type        = "t3.nano"
+      name          = "example-cluster-worker"
+      instance_type = "t3.nano"
       #additional_userdata  = "echo foo bar"
       asg_desired_capacity = 1
     },
